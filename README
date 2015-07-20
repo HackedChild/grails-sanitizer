@@ -77,7 +77,7 @@ import org.grails.plugins.sanitizer.MarkupSanitizerResult
 ...
 // implement the sanitizer in a method of your choice 
 MarkupSanitizerResult result = markupSanitizerService.sanitize(input) 
-if(!result.isInvalidMarkup()) { 
+if(!result.isInvalid()) { 
     //return result.cleanString 
 } else { 
     //return result.errorMessages 
